@@ -12,5 +12,5 @@ Pod::Spec.new do |spec|
 
   spec.framework = "UIKit"
   spec.source_files = "DotProgressBar/**/*.{swift}"
-  spec.resources = "DotProgressBar/**/*.{storyboard,xib}"
+  spec.resources = "DotProgressBar/**/*.{storyboard}"
 end
