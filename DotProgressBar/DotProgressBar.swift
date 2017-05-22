@@ -8,49 +8,49 @@
 
 import UIKit
 
-enum Orientation {
-    case vertical, horizontal
-}
+public class DotProgressBar: UIView {
 
-class DotProgressBar: UIView {
-
+    public enum Orientation {
+        case vertical, horizontal
+    }
+    
     ///Number of balls in progress meter
-    private(set) var numberOfDots:Int
+    public private(set) var numberOfDots:Int
     ///Bar orientation
-    private(set) var orientation:Orientation
+    public private(set) var orientation:Orientation
     ///Current page number the progress bar is showing
-    private(set) var currentDotNumber:Int = 1
+    public private(set) var currentDotNumber:Int = 1
     ///Whether or not updating the progress should be animated (defaults to 'true')
-    private(set) var animated:Bool = true
+    public private(set) var animated:Bool = true
     ///Amount of time the animation takes
-    private(set) var duration:TimeInterval = 1
+    public private(set) var duration:TimeInterval = 1
     ///Completion block executed after progress bar is finished animating
-    var completion:() -> Void = {}
+    public var completion:() -> Void = {}
     ///Color of empty progress track
-    var trackTintColor:UIColor = .lightGray
+    public var trackTintColor:UIColor = .lightGray
     ///Color of the progress bar
-    var progressTintColor:UIColor = .blue
+    public var progressTintColor:UIColor = .blue
     ///Size of the progress orbs
-    private(set) var dotRadius:CGFloat = 0
+    public private(set) var dotRadius:CGFloat = 0
     ///Distance between the orbs
-    private(set) var interDotDistance:CGFloat = 0
+    public private(set) var interDotDistance:CGFloat = 0
     ///Width of empty progress track
-    var trackWidth:CGFloat = 2
+    public var trackWidth:CGFloat = 2
     ///View that actually shows percentage of progress
     fileprivate var progressView:UIView = UIView()
     
-    init(numberOfDots:Int, orientation:Orientation) {
+    public init(numberOfDots:Int, orientation:Orientation) {
         self.numberOfDots = numberOfDots
         self.orientation = orientation
         super.init(frame: CGRect.zero)
         initProgressView(orientation)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         //make changes based on the frame changing
         create()
     }
@@ -171,7 +171,7 @@ class DotProgressBar: UIView {
         
     }
     
-    func updateProgress(toDot dot:Int, animated:Bool = true) {
+    public func updateProgress(toDot dot:Int, animated:Bool = true) {
         var progressDistance:CGFloat
         
         if dot < 1 {
