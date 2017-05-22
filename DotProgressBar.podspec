@@ -12,9 +12,9 @@ Pod::Spec.new do |s|
 
   s.author = { "Rob Norback" => "rnorback@gmail.com" }
 
-  s.homepage = "https://github.com/Rnorback/DotProgressBar"
+  s.homepage = "https://github.com/1debit/DotProgressBar"
 
-  s.source = { :git => "https://github.com/Rnorback/DotProgressBar.git", :tag => "#{s.version}"}
+  s.source = { :git => "https://github.com/1debit/DotProgressBar.git", :tag => "#{s.version}"}
 
   s.framework = "UIKit"
   
