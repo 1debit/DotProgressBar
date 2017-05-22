@@ -19,7 +19,7 @@ public class DotProgressBar: UIView {
     ///Bar orientation
     public private(set) var orientation:Orientation
     ///Current page number the progress bar is showing
-    public private(set) var currentDotNumber:Int = 1
+    public private(set) var currentDotNumber:Int
     ///Whether or not updating the progress should be animated (defaults to 'true')
     public private(set) var animated:Bool = true
     ///Amount of time the animation takes
@@ -39,9 +39,18 @@ public class DotProgressBar: UIView {
     ///View that actually shows percentage of progress
     fileprivate var progressView:UIView = UIView()
     
-    public init(numberOfDots:Int, orientation:Orientation) {
+    public init(numberOfDots:Int, orientation:Orientation, startingDot:Int = 1) {
         self.numberOfDots = numberOfDots
         self.orientation = orientation
+
+        if startingDot <= 0 {
+            self.currentDotNumber = 0
+        } else if startingDot > numberOfDots {
+            self.currentDotNumber = startingDot
+        } else {
+            self.currentDotNumber = startingDot
+        }
+        
         super.init(frame: CGRect.zero)
         initProgressView(orientation)
     }
@@ -72,6 +81,49 @@ public class DotProgressBar: UIView {
         addMaskLayer(orientation)
         updateProgress(toDot: currentDotNumber, animated: false)
     }
+    
+    public func updateProgress(toDot dot:Int, animated:Bool = true) {
+        var progressDistance:CGFloat
+        
+        if dot < 1 {
+            progressDistance = 0
+            currentDotNumber = 0
+        } else if dot > numberOfDots {
+            progressDistance = dotRadius * 2 + interDotDistance * CGFloat(numberOfDots - 1)
+            currentDotNumber = numberOfDots
+        } else {
+            progressDistance = dotRadius * 2 + interDotDistance * CGFloat(dot - 1)
+            currentDotNumber = dot
+        }
+        
+        if animated {
+            UIView.animate(withDuration: duration) {
+                self.updateProgressFrame(self.orientation, distance: progressDistance)
+            }
+        } else {
+            updateProgressFrame(orientation, distance: progressDistance)
+        }
+    }
+    
+    public func next(animated:Bool = true) {
+        updateProgress(toDot: currentDotNumber + 1, animated: animated)
+    }
+    
+    public func prev(animated:Bool = true) {
+        updateProgress(toDot: currentDotNumber - 1, animated: animated)
+    }
+    
+    fileprivate func calculateDotAndLineValuesBasedOnFrame(_ orientation:Orientation) {
+        switch orientation {
+        case .horizontal:
+            dotRadius = frame.height/2
+            interDotDistance = (frame.width - dotRadius * 2)/CGFloat(numberOfDots - 1)
+        case .vertical:
+            dotRadius = frame.width/2
+            interDotDistance = (frame.height - dotRadius * 2)/CGFloat(numberOfDots - 1)
+        }
+    }
+
     
     fileprivate func addMaskLayer(_ orientation:Orientation) {
         switch orientation {
@@ -169,39 +221,5 @@ public class DotProgressBar: UIView {
             )
         }
         
-    }
-    
-    public func updateProgress(toDot dot:Int, animated:Bool = true) {
-        var progressDistance:CGFloat
-        
-        if dot < 1 {
-            progressDistance = 0
-            currentDotNumber = 0
-        } else if dot > numberOfDots {
-            progressDistance = dotRadius * 2 + interDotDistance * CGFloat(numberOfDots - 1)
-            currentDotNumber = numberOfDots
-        } else {
-            progressDistance = dotRadius * 2 + interDotDistance * CGFloat(dot - 1)
-            currentDotNumber = dot
-        }
-        
-        if animated {
-            UIView.animate(withDuration: duration) {
-                self.updateProgressFrame(self.orientation, distance: progressDistance)
-            }
-        } else {
-            updateProgressFrame(orientation, distance: progressDistance)
-        }
-    }
-
-    fileprivate func calculateDotAndLineValuesBasedOnFrame(_ orientation:Orientation) {
-        switch orientation {
-        case .horizontal:
-            dotRadius = frame.height/2
-            interDotDistance = (frame.width - dotRadius * 2)/CGFloat(numberOfDots - 1)
-        case .vertical:
-            dotRadius = frame.width/2
-            interDotDistance = (frame.height - dotRadius * 2)/CGFloat(numberOfDots - 1)
-        }
     }
 }
