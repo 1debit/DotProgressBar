@@ -10,7 +10,6 @@
 		93114FDF1ED35DB4004C997B /* DotProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93114FD51ED35DB4004C997B /* DotProgressBar.framework */; };
 		93114FE41ED35DB4004C997B /* DotProgressBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93114FE31ED35DB4004C997B /* DotProgressBarTests.swift */; };
 		93114FE61ED35DB4004C997B /* DotProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 93114FD81ED35DB4004C997B /* DotProgressBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93114FF31ED35EC1004C997B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93114FEF1ED35EC1004C997B /* ViewController.swift */; };
 		93114FF41ED35EC1004C997B /* DotProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93114FF01ED35EC1004C997B /* DotProgressBar.swift */; };
 		93114FF51ED35EC1004C997B /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93114FF11ED35EC1004C997B /* Dot.swift */; };
 		93114FF61ED35EC1004C997B /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93114FF21ED35EC1004C997B /* Line.swift */; };
@@ -33,7 +32,6 @@
 		93114FDE1ED35DB4004C997B /* DotProgressBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotProgressBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93114FE31ED35DB4004C997B /* DotProgressBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotProgressBarTests.swift; sourceTree = "<group>"; };
 		93114FE51ED35DB4004C997B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93114FEF1ED35EC1004C997B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93114FF01ED35EC1004C997B /* DotProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotProgressBar.swift; sourceTree = "<group>"; };
 		93114FF11ED35EC1004C997B /* Dot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dot.swift; sourceTree = "<group>"; };
 		93114FF21ED35EC1004C997B /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				93114FD81ED35DB4004C997B /* DotProgressBar.h */,
-				93114FEF1ED35EC1004C997B /* ViewController.swift */,
 				93114FF01ED35EC1004C997B /* DotProgressBar.swift */,
 				93114FF11ED35EC1004C997B /* Dot.swift */,
 				93114FF21ED35EC1004C997B /* Line.swift */,
@@ -213,7 +210,6 @@
 			files = (
 				93114FF41ED35EC1004C997B /* DotProgressBar.swift in Sources */,
 				93114FF61ED35EC1004C997B /* Line.swift in Sources */,
-				93114FF31ED35EC1004C997B /* ViewController.swift in Sources */,
 				93114FF51ED35EC1004C997B /* Dot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +420,7 @@
 				93114FEB1ED35DB4004C997B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93114FEC1ED35DB4004C997B /* Build configuration list for PBXNativeTarget "DotProgressBarTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +429,7 @@
 				93114FEE1ED35DB4004C997B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
