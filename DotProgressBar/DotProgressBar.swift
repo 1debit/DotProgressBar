@@ -9,7 +9,7 @@
 import UIKit
 
 public class DotProgressBar: UIView {
-
+    
     public enum Orientation {
         case vertical, horizontal
     }
@@ -20,38 +20,48 @@ public class DotProgressBar: UIView {
     public private(set) var orientation:Orientation
     ///Current page number the progress bar is showing
     public private(set) var currentDotNumber:Int
-    ///Whether or not updating the progress should be animated (defaults to 'true')
-    public private(set) var animated:Bool = true
     ///Amount of time the animation takes
-    public private(set) var duration:TimeInterval = 1
-    ///Completion block executed after progress bar is finished animating
-    public var completion:() -> Void = {}
-    ///Color of empty progress track
-    public var trackTintColor:UIColor = .lightGray
-    ///Color of the progress bar
-    public var progressTintColor:UIColor = .blue
+    public private(set) var duration:TimeInterval = 0.5
+    
     ///Size of the progress orbs
     public private(set) var dotRadius:CGFloat = 0
     ///Distance between the orbs
     public private(set) var interDotDistance:CGFloat = 0
-    ///Width of empty progress track
-    public var trackWidth:CGFloat = 2
+    
+    //Scale of the progress line in relation to the width of the frame
+    fileprivate var dotToLineScale:CGFloat = 0.5
+    ///The scale of the track dots in relation to the progress dots
+    fileprivate var trackToProgressScale:CGFloat = 0.5
+    
+    ///The track view that sits behind the progress view
+    fileprivate var trackView:UIView = UIView()
+    ///Color of empty progress track
+    public var trackTintColor:UIColor = .lightGray {
+        didSet {
+            trackView.backgroundColor = trackTintColor
+        }
+    }
+    
     ///View that actually shows percentage of progress
     fileprivate var progressView:UIView = UIView()
+    ///Color of the progress bar
+    public var progressTintColor:UIColor = .blue {
+        didSet {
+            progressView.backgroundColor = progressTintColor
+        }
+    }
     
     public init(numberOfDots:Int, orientation:Orientation, startingDot:Int = 1) {
-        self.numberOfDots = numberOfDots
+        assert(numberOfDots > 0, "numberOfDots must be a positive number")
+        assert(startingDot >= 0 && startingDot <= numberOfDots, "startingDot must be between 0 and numbersOfDots")
+        
         self.orientation = orientation
-
-        if startingDot <= 0 {
-            self.currentDotNumber = 0
-        } else if startingDot > numberOfDots {
-            self.currentDotNumber = startingDot
-        } else {
-            self.currentDotNumber = startingDot
-        }
+        self.numberOfDots = numberOfDots
+        self.currentDotNumber = startingDot
         
         super.init(frame: CGRect.zero)
+        //must be in this order
+        initTrackView()
         initProgressView(orientation)
     }
     
@@ -61,7 +71,16 @@ public class DotProgressBar: UIView {
     
     override public func layoutSubviews() {
         //make changes based on the frame changing
-        create()
+        calculateDotAndLineValuesBasedOnFrame(orientation)
+        trackView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
+        trackView.layer.mask = getMaskLayer(orientation, dotScale: trackToProgressScale)
+        progressView.layer.mask = getMaskLayer(orientation)
+        updateProgress(toDot: currentDotNumber, animated: false)
+    }
+    
+    fileprivate func initTrackView() {
+        trackView.backgroundColor = trackTintColor
+        self.addSubview(trackView)
     }
     
     fileprivate func initProgressView(_ orientation:Orientation) {
@@ -71,20 +90,14 @@ public class DotProgressBar: UIView {
         case .vertical:
             progressView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 0)
         }
-        self.addSubview(progressView)
-    }
-    
-    fileprivate func create() {
-        self.backgroundColor = trackTintColor
         progressView.backgroundColor = progressTintColor
-        calculateDotAndLineValuesBasedOnFrame(orientation)
-        addMaskLayer(orientation)
-        updateProgress(toDot: currentDotNumber, animated: false)
+        self.addSubview(progressView)
     }
     
     public func updateProgress(toDot dot:Int, animated:Bool = true) {
         var progressDistance:CGFloat
         
+        //Makes sure you can't go outside the progress bounds
         if dot < 1 {
             progressDistance = 0
             currentDotNumber = 0
@@ -113,6 +126,10 @@ public class DotProgressBar: UIView {
         updateProgress(toDot: currentDotNumber - 1, animated: animated)
     }
     
+    public func reset(animated:Bool = true) {
+        updateProgress(toDot: 0, animated: animated)
+    }
+    
     fileprivate func calculateDotAndLineValuesBasedOnFrame(_ orientation:Orientation) {
         switch orientation {
         case .horizontal:
@@ -123,85 +140,46 @@ public class DotProgressBar: UIView {
             interDotDistance = (frame.height - dotRadius * 2)/CGFloat(numberOfDots - 1)
         }
     }
-
     
-    fileprivate func addMaskLayer(_ orientation:Orientation) {
+    fileprivate func getMaskLayer(_ orientation:Orientation, dotScale:CGFloat = 1.0) -> CALayer {
+        
+        let maskLayer = CALayer()
+        for dotNum in 0...numberOfDots - 1 {
+            
+            let dot = Dot(
+                radius: dotRadius * dotScale,
+                position: dotPosition(orientation, dotNum: dotNum),
+                color: .white
+            )
+            maskLayer.addSublayer(dot)
+            
+            if dotNum > 0 {
+                let line = Line(
+                    start: dotPosition(orientation, dotNum: dotNum - 1),
+                    end: dotPosition(orientation, dotNum: dotNum),
+                    color: .white,
+                    width: dotRadius * dotToLineScale * dotScale
+                )
+                maskLayer.addSublayer(line)
+            }
+        }
+        return maskLayer
+    }
+    
+    fileprivate func dotPosition(_ orientation:Orientation, dotNum:Int)  -> CGPoint {
         switch orientation {
         case .horizontal:
-            addHorizontalMaskLayer()
+            return CGPoint(
+                x: dotRadius + interDotDistance * CGFloat(dotNum),
+                y: dotRadius
+            )
         case .vertical:
-            addVerticalMaskLayer()
-        }
-    }
-    
-    fileprivate func addHorizontalMaskLayer() {
-        
-        let maskLayer = CALayer()
-        for page in 1...numberOfDots {
-            
-            let dot = Dot(
-                radius: dotRadius,
-                position: CGPoint(
-                    x: dotRadius + interDotDistance * CGFloat(page - 1),
-                    y: dotRadius
-                ),
-                color: trackTintColor
+            return CGPoint(
+                x: dotRadius,
+                y: dotRadius + interDotDistance * CGFloat(dotNum)
             )
-            maskLayer.addSublayer(dot)
-            
-            if page > 1 {
-                let line = Line(
-                    start: CGPoint(
-                        x: dotRadius + interDotDistance * CGFloat(page - 2),
-                        y: dotRadius
-                    ),
-                    end: CGPoint(
-                        x: dotRadius + interDotDistance * CGFloat(page - 1),
-                        y: dotRadius
-                    ),
-                    color: trackTintColor,
-                    width: trackWidth
-                )
-                maskLayer.addSublayer(line)
-            }
         }
-        self.layer.mask = maskLayer
     }
-    
-    fileprivate func addVerticalMaskLayer() {
-        
-        let maskLayer = CALayer()
-        for page in 1...numberOfDots {
-            
-            let dot = Dot(
-                radius: dotRadius,
-                position: CGPoint(
-                    x: dotRadius,
-                    y: dotRadius + interDotDistance * CGFloat(page - 1)
-                ),
-                color: trackTintColor
-            )
-            maskLayer.addSublayer(dot)
-            
-            if page > 1 {
-                let line = Line(
-                    start: CGPoint(
-                        x: dotRadius,
-                        y: dotRadius + interDotDistance * CGFloat(page - 2)
-                    ),
-                    end: CGPoint(
-                        x: dotRadius,
-                        y: dotRadius + interDotDistance * CGFloat(page - 1)
-                    ),
-                    color: trackTintColor,
-                    width: trackWidth
-                )
-                maskLayer.addSublayer(line)
-            }
-        }
-        self.layer.mask = maskLayer
-    }
-
     
     fileprivate func updateProgressFrame(_ orientation:Orientation, distance:CGFloat) {
         switch orientation {
