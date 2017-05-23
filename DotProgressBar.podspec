@@ -1,15 +1,14 @@
-Pod::Spec.new do |spec|
-  spec.name = "DotProgressBar"
-  spec.summary = "DotProgressBar is an animatable progress bar for chunks of work specified by dots."
-  spec.version = "0.5.0"
-  spec.license = { :type => "MIT", :file => "LICENSE" }
-  spec.authors = { "Rob Norback" => "rnorback@gmail.com", "Eric Lewis" => "eric@chimebank.com" }
-  spec.homepage = "https://github.com/1debit/DotProgressBar"
-  spec.source = { :git => "https://github.com/1debit/DotProgressBar.git", :tag => "#{spec.version}"}
+Pod::Spec.new do |s|
+  s.name          = "DotProgressBar"
+  s.summary       = "DotProgressBar is an animatable progress bar for chunks of work specified by dots."
+  s.version       = "0.6.0"
+  s.license       = { :type => "MIT", :file => "LICENSE" }
+  s.authors       = { "Rob Norback" => "rnorback@gmail.com", "Eric Lewis" => "eric@chimebank.com" }
+  s.homepage      = "https://github.com/1debit/DotProgressBar"
+  s.source        = { :git => "https://github.com/1debit/DotProgressBar.git", :tag => "#{s.version}"}
+  s.source_files  = "DotProgressBar/**/*.{swift}"
+  s.framework     = "UIKit"
 
-  spec.platform = :ios
-  spec.ios.deployment_target = '8.0'
-
-  spec.framework = "UIKit"
-  spec.source_files = "DotProgressBar/**/*.{swift}"
+  s.platform              = :ios
+  s.ios.deployment_target = '9.0'
 end
