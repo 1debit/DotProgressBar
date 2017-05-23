@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>DotProgressBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DotProgressBarDemo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DotProgressBarDemoTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DotProgressBarDemoUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>348D86947A9AF4AB941F5543F954AE71</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5163FB6545B94B237640353F22037517</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A75DA3CBFA127B1E06435152A8E013E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4A3B534FA14AB669DB17E8F5AEEACB8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

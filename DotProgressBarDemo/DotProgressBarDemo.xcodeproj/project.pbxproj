@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DCB73036B5AD3EB3014A5F2 /* Pods_DotProgressBarDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FF1A9E572E37D2E2FF3BEF /* Pods_DotProgressBarDemo.framework */; };
+		93BCE2911ED4EC3D00B6A876 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BCE2901ED4EC3D00B6A876 /* AppDelegate.swift */; };
+		93BCE2931ED4EC3D00B6A876 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BCE2921ED4EC3D00B6A876 /* ViewController.swift */; };
+		93BCE2961ED4EC3D00B6A876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93BCE2941ED4EC3D00B6A876 /* Main.storyboard */; };
+		93BCE2981ED4EC3D00B6A876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93BCE2971ED4EC3D00B6A876 /* Assets.xcassets */; };
+		93BCE29B1ED4EC3D00B6A876 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93BCE2991ED4EC3D00B6A876 /* LaunchScreen.storyboard */; };
+		93BCE2A61ED4EC3D00B6A876 /* DotProgressBarDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BCE2A51ED4EC3D00B6A876 /* DotProgressBarDemoTests.swift */; };
+		93BCE2B11ED4EC3D00B6A876 /* DotProgressBarDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BCE2B01ED4EC3D00B6A876 /* DotProgressBarDemoUITests.swift */; };
+		A76F64C0F1D78CEE1ABAD48A /* Pods_DotProgressBarDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EF93639A733C616C2EB8A9 /* Pods_DotProgressBarDemoTests.framework */; };
+		FA92B6AC0B0939836E955292 /* Pods_DotProgressBarDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3C6A089AEDEB9EC7E89991 /* Pods_DotProgressBarDemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93BCE2A21ED4EC3D00B6A876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93BCE2851ED4EC3D00B6A876 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93BCE28C1ED4EC3D00B6A876;
+			remoteInfo = DotProgressBarDemo;
+		};
+		93BCE2AD1ED4EC3D00B6A876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93BCE2851ED4EC3D00B6A876 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93BCE28C1ED4EC3D00B6A876;
+			remoteInfo = DotProgressBarDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09AC3CB161CDDC4291C6AE3F /* Pods-DotProgressBarDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotProgressBarDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DotProgressBarDemo/Pods-DotProgressBarDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		0D3C6A089AEDEB9EC7E89991 /* Pods_DotProgressBarDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DotProgressBarDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC6C676C547AE39785C17FA /* Pods-DotProgressBarDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotProgressBarDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DotProgressBarDemoUITests/Pods-DotProgressBarDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		59F01A5E439233099BAB8C23 /* Pods-DotProgressBarDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotProgressBarDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DotProgressBarDemoUITests/Pods-DotProgressBarDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		93BCE28D1ED4EC3D00B6A876 /* DotProgressBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotProgressBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93BCE2901ED4EC3D00B6A876 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93BCE2921ED4EC3D00B6A876 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93BCE2951ED4EC3D00B6A876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93BCE2971ED4EC3D00B6A876 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93BCE29A1ED4EC3D00B6A876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93BCE29C1ED4EC3D00B6A876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93BCE2A11ED4EC3D00B6A876 /* DotProgressBarDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotProgressBarDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93BCE2A51ED4EC3D00B6A876 /* DotProgressBarDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotProgressBarDemoTests.swift; sourceTree = "<group>"; };
+		93BCE2A71ED4EC3D00B6A876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93BCE2AC1ED4EC3D00B6A876 /* DotProgressBarDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotProgressBarDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93BCE2B01ED4EC3D00B6A876 /* DotProgressBarDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotProgressBarDemoUITests.swift; sourceTree = "<group>"; };
+		93BCE2B21ED4EC3D00B6A876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0FF1A9E572E37D2E2FF3BEF /* Pods_DotProgressBarDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DotProgressBarDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B191E6A3C3048702E7DD2B83 /* Pods-DotProgressBarDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotProgressBarDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DotProgressBarDemoTests/Pods-DotProgressBarDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E5EF93639A733C616C2EB8A9 /* Pods_DotProgressBarDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DotProgressBarDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6ACF8DFE83F401A32ACBDC9 /* Pods-DotProgressBarDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotProgressBarDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DotProgressBarDemo/Pods-DotProgressBarDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F7CB40F214EBFEDC33BE06BC /* Pods-DotProgressBarDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotProgressBarDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DotProgressBarDemoTests/Pods-DotProgressBarDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93BCE28A1ED4EC3D00B6A876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCB73036B5AD3EB3014A5F2 /* Pods_DotProgressBarDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BCE29E1ED4EC3D00B6A876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76F64C0F1D78CEE1ABAD48A /* Pods_DotProgressBarDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BCE2A91ED4EC3D00B6A876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA92B6AC0B0939836E955292 /* Pods_DotProgressBarDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FA826DC1A6CF42FDF4FD80D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0FF1A9E572E37D2E2FF3BEF /* Pods_DotProgressBarDemo.framework */,
+				E5EF93639A733C616C2EB8A9 /* Pods_DotProgressBarDemoTests.framework */,
+				0D3C6A089AEDEB9EC7E89991 /* Pods_DotProgressBarDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93BCE2841ED4EC3C00B6A876 = {
+			isa = PBXGroup;
+			children = (
+				93BCE28F1ED4EC3D00B6A876 /* DotProgressBarDemo */,
+				93BCE2A41ED4EC3D00B6A876 /* DotProgressBarDemoTests */,
+				93BCE2AF1ED4EC3D00B6A876 /* DotProgressBarDemoUITests */,
+				93BCE28E1ED4EC3D00B6A876 /* Products */,
+				ED140FF18641E70F195881A2 /* Pods */,
+				1FA826DC1A6CF42FDF4FD80D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93BCE28E1ED4EC3D00B6A876 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93BCE28D1ED4EC3D00B6A876 /* DotProgressBarDemo.app */,
+				93BCE2A11ED4EC3D00B6A876 /* DotProgressBarDemoTests.xctest */,
+				93BCE2AC1ED4EC3D00B6A876 /* DotProgressBarDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93BCE28F1ED4EC3D00B6A876 /* DotProgressBarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				93BCE2901ED4EC3D00B6A876 /* AppDelegate.swift */,
+				93BCE2921ED4EC3D00B6A876 /* ViewController.swift */,
+				93BCE2941ED4EC3D00B6A876 /* Main.storyboard */,
+				93BCE2971ED4EC3D00B6A876 /* Assets.xcassets */,
+				93BCE2991ED4EC3D00B6A876 /* LaunchScreen.storyboard */,
+				93BCE29C1ED4EC3D00B6A876 /* Info.plist */,
+			);
+			path = DotProgressBarDemo;
+			sourceTree = "<group>";
+		};
+		93BCE2A41ED4EC3D00B6A876 /* DotProgressBarDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				93BCE2A51ED4EC3D00B6A876 /* DotProgressBarDemoTests.swift */,
+				93BCE2A71ED4EC3D00B6A876 /* Info.plist */,
+			);
+			path = DotProgressBarDemoTests;
+			sourceTree = "<group>";
+		};
+		93BCE2AF1ED4EC3D00B6A876 /* DotProgressBarDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93BCE2B01ED4EC3D00B6A876 /* DotProgressBarDemoUITests.swift */,
+				93BCE2B21ED4EC3D00B6A876 /* Info.plist */,
+			);
+			path = DotProgressBarDemoUITests;
+			sourceTree = "<group>";
+		};
+		ED140FF18641E70F195881A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09AC3CB161CDDC4291C6AE3F /* Pods-DotProgressBarDemo.debug.xcconfig */,
+				F6ACF8DFE83F401A32ACBDC9 /* Pods-DotProgressBarDemo.release.xcconfig */,
+				F7CB40F214EBFEDC33BE06BC /* Pods-DotProgressBarDemoTests.debug.xcconfig */,
+				B191E6A3C3048702E7DD2B83 /* Pods-DotProgressBarDemoTests.release.xcconfig */,
+				59F01A5E439233099BAB8C23 /* Pods-DotProgressBarDemoUITests.debug.xcconfig */,
+				1EC6C676C547AE39785C17FA /* Pods-DotProgressBarDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93BCE28C1ED4EC3D00B6A876 /* DotProgressBarDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93BCE2B51ED4EC3D00B6A876 /* Build configuration list for PBXNativeTarget "DotProgressBarDemo" */;
+			buildPhases = (
+				DD262F0C2BEE2529C3A9C16C /* [CP] Check Pods Manifest.lock */,
+				93BCE2891ED4EC3D00B6A876 /* Sources */,
+				93BCE28A1ED4EC3D00B6A876 /* Frameworks */,
+				93BCE28B1ED4EC3D00B6A876 /* Resources */,
+				5900483C7DC911A627694037 /* [CP] Embed Pods Frameworks */,
+				BEE3AE6FD2B83CA28B007BA4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DotProgressBarDemo;
+			productName = DotProgressBarDemo;
+			productReference = 93BCE28D1ED4EC3D00B6A876 /* DotProgressBarDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93BCE2A01ED4EC3D00B6A876 /* DotProgressBarDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93BCE2B81ED4EC3D00B6A876 /* Build configuration list for PBXNativeTarget "DotProgressBarDemoTests" */;
+			buildPhases = (
+				09B678BFE4451B71E66D4EDA /* [CP] Check Pods Manifest.lock */,
+				93BCE29D1ED4EC3D00B6A876 /* Sources */,
+				93BCE29E1ED4EC3D00B6A876 /* Frameworks */,
+				93BCE29F1ED4EC3D00B6A876 /* Resources */,
+				4A59D1FB454CC5CB793648B1 /* [CP] Embed Pods Frameworks */,
+				D07607CC1B50BB0D97A30036 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93BCE2A31ED4EC3D00B6A876 /* PBXTargetDependency */,
+			);
+			name = DotProgressBarDemoTests;
+			productName = DotProgressBarDemoTests;
+			productReference = 93BCE2A11ED4EC3D00B6A876 /* DotProgressBarDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93BCE2AB1ED4EC3D00B6A876 /* DotProgressBarDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93BCE2BB1ED4EC3D00B6A876 /* Build configuration list for PBXNativeTarget "DotProgressBarDemoUITests" */;
+			buildPhases = (
+				23819C7063AB3C6E9ED94D91 /* [CP] Check Pods Manifest.lock */,
+				93BCE2A81ED4EC3D00B6A876 /* Sources */,
+				93BCE2A91ED4EC3D00B6A876 /* Frameworks */,
+				93BCE2AA1ED4EC3D00B6A876 /* Resources */,
+				956D711829836A0B2CEC38C8 /* [CP] Embed Pods Frameworks */,
+				399213E19C7231CFC6B07060 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93BCE2AE1ED4EC3D00B6A876 /* PBXTargetDependency */,
+			);
+			name = DotProgressBarDemoUITests;
+			productName = DotProgressBarDemoUITests;
+			productReference = 93BCE2AC1ED4EC3D00B6A876 /* DotProgressBarDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93BCE2851ED4EC3D00B6A876 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Norback Solutions, LLC";
+				TargetAttributes = {
+					93BCE28C1ED4EC3D00B6A876 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = CBH54B9P5C;
+						ProvisioningStyle = Automatic;
+					};
+					93BCE2A01ED4EC3D00B6A876 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = CBH54B9P5C;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 93BCE28C1ED4EC3D00B6A876;
+					};
+					93BCE2AB1ED4EC3D00B6A876 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = CBH54B9P5C;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 93BCE28C1ED4EC3D00B6A876;
+					};
+				};
+			};
+			buildConfigurationList = 93BCE2881ED4EC3D00B6A876 /* Build configuration list for PBXProject "DotProgressBarDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93BCE2841ED4EC3C00B6A876;
+			productRefGroup = 93BCE28E1ED4EC3D00B6A876 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93BCE28C1ED4EC3D00B6A876 /* DotProgressBarDemo */,
+				93BCE2A01ED4EC3D00B6A876 /* DotProgressBarDemoTests */,
+				93BCE2AB1ED4EC3D00B6A876 /* DotProgressBarDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93BCE28B1ED4EC3D00B6A876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BCE29B1ED4EC3D00B6A876 /* LaunchScreen.storyboard in Resources */,
+				93BCE2981ED4EC3D00B6A876 /* Assets.xcassets in Resources */,
+				93BCE2961ED4EC3D00B6A876 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BCE29F1ED4EC3D00B6A876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BCE2AA1ED4EC3D00B6A876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09B678BFE4451B71E66D4EDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		23819C7063AB3C6E9ED94D91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		399213E19C7231CFC6B07060 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DotProgressBarDemoUITests/Pods-DotProgressBarDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A59D1FB454CC5CB793648B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DotProgressBarDemoTests/Pods-DotProgressBarDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5900483C7DC911A627694037 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DotProgressBarDemo/Pods-DotProgressBarDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		956D711829836A0B2CEC38C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DotProgressBarDemoUITests/Pods-DotProgressBarDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEE3AE6FD2B83CA28B007BA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DotProgressBarDemo/Pods-DotProgressBarDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D07607CC1B50BB0D97A30036 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DotProgressBarDemoTests/Pods-DotProgressBarDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD262F0C2BEE2529C3A9C16C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93BCE2891ED4EC3D00B6A876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BCE2931ED4EC3D00B6A876 /* ViewController.swift in Sources */,
+				93BCE2911ED4EC3D00B6A876 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BCE29D1ED4EC3D00B6A876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BCE2A61ED4EC3D00B6A876 /* DotProgressBarDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BCE2A81ED4EC3D00B6A876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BCE2B11ED4EC3D00B6A876 /* DotProgressBarDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93BCE2A31ED4EC3D00B6A876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93BCE28C1ED4EC3D00B6A876 /* DotProgressBarDemo */;
+			targetProxy = 93BCE2A21ED4EC3D00B6A876 /* PBXContainerItemProxy */;
+		};
+		93BCE2AE1ED4EC3D00B6A876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93BCE28C1ED4EC3D00B6A876 /* DotProgressBarDemo */;
+			targetProxy = 93BCE2AD1ED4EC3D00B6A876 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93BCE2941ED4EC3D00B6A876 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93BCE2951ED4EC3D00B6A876 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93BCE2991ED4EC3D00B6A876 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93BCE29A1ED4EC3D00B6A876 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93BCE2B31ED4EC3D00B6A876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93BCE2B41ED4EC3D00B6A876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93BCE2B61ED4EC3D00B6A876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09AC3CB161CDDC4291C6AE3F /* Pods-DotProgressBarDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CBH54B9P5C;
+				INFOPLIST_FILE = DotProgressBarDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robnorback.DotProgressBarDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		93BCE2B71ED4EC3D00B6A876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6ACF8DFE83F401A32ACBDC9 /* Pods-DotProgressBarDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CBH54B9P5C;
+				INFOPLIST_FILE = DotProgressBarDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robnorback.DotProgressBarDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		93BCE2B91ED4EC3D00B6A876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7CB40F214EBFEDC33BE06BC /* Pods-DotProgressBarDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CBH54B9P5C;
+				INFOPLIST_FILE = DotProgressBarDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robnorback.DotProgressBarDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotProgressBarDemo.app/DotProgressBarDemo";
+			};
+			name = Debug;
+		};
+		93BCE2BA1ED4EC3D00B6A876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B191E6A3C3048702E7DD2B83 /* Pods-DotProgressBarDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CBH54B9P5C;
+				INFOPLIST_FILE = DotProgressBarDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robnorback.DotProgressBarDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotProgressBarDemo.app/DotProgressBarDemo";
+			};
+			name = Release;
+		};
+		93BCE2BC1ED4EC3D00B6A876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59F01A5E439233099BAB8C23 /* Pods-DotProgressBarDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = CBH54B9P5C;
+				INFOPLIST_FILE = DotProgressBarDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robnorback.DotProgressBarDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DotProgressBarDemo;
+			};
+			name = Debug;
+		};
+		93BCE2BD1ED4EC3D00B6A876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EC6C676C547AE39785C17FA /* Pods-DotProgressBarDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = CBH54B9P5C;
+				INFOPLIST_FILE = DotProgressBarDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robnorback.DotProgressBarDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DotProgressBarDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93BCE2881ED4EC3D00B6A876 /* Build configuration list for PBXProject "DotProgressBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93BCE2B31ED4EC3D00B6A876 /* Debug */,
+				93BCE2B41ED4EC3D00B6A876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93BCE2B51ED4EC3D00B6A876 /* Build configuration list for PBXNativeTarget "DotProgressBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93BCE2B61ED4EC3D00B6A876 /* Debug */,
+				93BCE2B71ED4EC3D00B6A876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		93BCE2B81ED4EC3D00B6A876 /* Build configuration list for PBXNativeTarget "DotProgressBarDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93BCE2B91ED4EC3D00B6A876 /* Debug */,
+				93BCE2BA1ED4EC3D00B6A876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		93BCE2BB1ED4EC3D00B6A876 /* Build configuration list for PBXNativeTarget "DotProgressBarDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93BCE2BC1ED4EC3D00B6A876 /* Debug */,
+				93BCE2BD1ED4EC3D00B6A876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93BCE2851ED4EC3D00B6A876 /* Project object */;
+}

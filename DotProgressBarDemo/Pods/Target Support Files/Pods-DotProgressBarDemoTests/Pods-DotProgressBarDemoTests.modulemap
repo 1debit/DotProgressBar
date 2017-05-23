@@ -1,0 +1,6 @@
+framework module Pods_DotProgressBarDemoTests {
+  umbrella header "Pods-DotProgressBarDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module DotProgressBar {
+  umbrella header "DotProgressBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

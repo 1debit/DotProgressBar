@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0101B41C125F8DEC0DE313BCD7FA02C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		07F588F0B5C2B014D0A9031C4DF23BF7 /* Pods-DotProgressBarDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7300C4CFC7F4F253E9116DB24E582C47 /* Pods-DotProgressBarDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16B50A9E5FFA62AD9AD72B89830BB668 /* Pods-DotProgressBarDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5A9FB546238B40F24453A20885989D /* Pods-DotProgressBarDemoUITests-dummy.m */; };
+		2C107871CB4E6BB2AC796EC6A5657527 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		328AC10559D55F0DA73562FBE395E948 /* Pods-DotProgressBarDemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 708DBC31C4E922548694AB7D3B4819D0 /* Pods-DotProgressBarDemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E8F22BC7E988F3A47F54C857E720635 /* DotProgressBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 165B916D7E237D328389307D97CD51B8 /* DotProgressBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		569C7C46D75B49070C530B407C19BB87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		7C212519454D3CF06FDA1C79164DEB13 /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1FC27AD2EEF7D68080FE667141A266 /* Dot.swift */; };
+		852D62B4FE4EC4122FCFC4B225F4A225 /* Pods-DotProgressBarDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E502D5524B002FFF52A5783C3AE0DD3 /* Pods-DotProgressBarDemo-dummy.m */; };
+		93A257780D99B2C356BB80F3C6DDCD8C /* Pods-DotProgressBarDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6028A383402E8F7A43CD0B3928A57B91 /* Pods-DotProgressBarDemoTests-dummy.m */; };
+		94E4635E72872F9C7CAE7B7635C70597 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		9E95CB549FC61FFF3174E108EA1FE260 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		BD9B9A7BC552AA35625386C880EB947F /* DotProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FD3A3CF46FF51B1353C5FED5866F0 /* DotProgressBar.swift */; };
+		DA0E1E8450C61751ECB92BE2F27A6858 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633070653F3AB620FFCC788CC43CFB51 /* Line.swift */; };
+		DC17D000187C776D0ABCCAE26441A8B6 /* DotProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121C82AB6A7E0B995AAA19B9F03AE07 /* DotProgressBar-dummy.m */; };
+		FB20BFC2B10BE9D4B4B54F8B7442A4A0 /* Pods-DotProgressBarDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1103230BD14E77C3D128E19A0DB961B /* Pods-DotProgressBarDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35BE74C59752B353BF60A97406D5A101 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4A3B534FA14AB669DB17E8F5AEEACB8;
+			remoteInfo = DotProgressBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		018790996230151832B27C725BD2D470 /* DotProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DotProgressBar.modulemap; sourceTree = "<group>"; };
+		067AF4CC7429C786FA084FFDF74B6AA4 /* Pods-DotProgressBarDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DotProgressBarDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		0BB0A0AA2F4F309A726CA0A6CC11C26C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		135FD3A3CF46FF51B1353C5FED5866F0 /* DotProgressBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotProgressBar.swift; path = DotProgressBar/DotProgressBar.swift; sourceTree = "<group>"; };
+		165B916D7E237D328389307D97CD51B8 /* DotProgressBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DotProgressBar-umbrella.h"; sourceTree = "<group>"; };
+		1C5A9FB546238B40F24453A20885989D /* Pods-DotProgressBarDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DotProgressBarDemoUITests-dummy.m"; sourceTree = "<group>"; };
+		2219BB616E04FC93B471AAD27EA8F46E /* Pods-DotProgressBarDemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DotProgressBarDemoUITests-frameworks.sh"; sourceTree = "<group>"; };
+		2E502D5524B002FFF52A5783C3AE0DD3 /* Pods-DotProgressBarDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DotProgressBarDemo-dummy.m"; sourceTree = "<group>"; };
+		39D69BB79E6E92B72B4799ABB9C99FB7 /* Pods-DotProgressBarDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DotProgressBarDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		52D5948FF5C7A17DF466FD4BC6772045 /* Pods_DotProgressBarDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DotProgressBarDemoTests.framework; path = "Pods-DotProgressBarDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F6B98116682C550D7B842648D13122 /* Pods-DotProgressBarDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DotProgressBarDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DAA46B854D699025F2FA9F688A10C07 /* DotProgressBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DotProgressBar.xcconfig; sourceTree = "<group>"; };
+		6007114D67EEDB14237FE6B92EA9EDEC /* Pods-DotProgressBarDemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DotProgressBarDemoUITests.modulemap"; sourceTree = "<group>"; };
+		6028A383402E8F7A43CD0B3928A57B91 /* Pods-DotProgressBarDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DotProgressBarDemoTests-dummy.m"; sourceTree = "<group>"; };
+		6121C82AB6A7E0B995AAA19B9F03AE07 /* DotProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DotProgressBar-dummy.m"; sourceTree = "<group>"; };
+		62E6EBF470459DE2DCAEB4DAD4B1BB1B /* Pods-DotProgressBarDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DotProgressBarDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		633070653F3AB620FFCC788CC43CFB51 /* Line.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Line.swift; path = DotProgressBar/Line.swift; sourceTree = "<group>"; };
+		6B8A3A4E44DA024F76F5D3E9ED579EC7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B99E68BC05EF6120A69E035F912817C /* Pods-DotProgressBarDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DotProgressBarDemoTests.modulemap"; sourceTree = "<group>"; };
+		6D1FC27AD2EEF7D68080FE667141A266 /* Dot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dot.swift; path = DotProgressBar/Dot.swift; sourceTree = "<group>"; };
+		707BB4D2A5D4E91646371E1DF0B1F3CC /* Pods-DotProgressBarDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DotProgressBarDemo-frameworks.sh"; sourceTree = "<group>"; };
+		708DBC31C4E922548694AB7D3B4819D0 /* Pods-DotProgressBarDemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DotProgressBarDemoUITests-umbrella.h"; sourceTree = "<group>"; };
+		7300C4CFC7F4F253E9116DB24E582C47 /* Pods-DotProgressBarDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DotProgressBarDemoTests-umbrella.h"; sourceTree = "<group>"; };
+		83DCEFB46B7A7E133D2DD82D97662981 /* Pods-DotProgressBarDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DotProgressBarDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		92518D9E5DEBDF7F7571E05D1D5DDB4D /* Pods-DotProgressBarDemoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DotProgressBarDemoUITests-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B89469824B783AA0ADA755D04A8BFE7 /* DotProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DotProgressBar-prefix.pch"; sourceTree = "<group>"; };
+		9C1E25728C4FE896EEFCDC43C3977D84 /* Pods-DotProgressBarDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DotProgressBarDemo-resources.sh"; sourceTree = "<group>"; };
+		9C38E37862DAF2AF1372226DB0D846A3 /* Pods-DotProgressBarDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DotProgressBarDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B0F5D15535E0A8BA43825F833522D120 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BCF93DC95B2C820D92A70D37A27A0BAA /* Pods-DotProgressBarDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DotProgressBarDemoTests-frameworks.sh"; sourceTree = "<group>"; };
+		C20B0A303C140936B606428B9547AC35 /* Pods-DotProgressBarDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DotProgressBarDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C3ECF3FCA000F0C51DA87BE63E01BB7C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C49E0D5C8228E087D2077139F6A97C42 /* Pods-DotProgressBarDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DotProgressBarDemo.modulemap"; sourceTree = "<group>"; };
+		C79248B3BBDE3F176945CF3E5BCCE7B9 /* Pods_DotProgressBarDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DotProgressBarDemoUITests.framework; path = "Pods-DotProgressBarDemoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB2DE9782F29AF91AC0880A5B5B4313 /* Pods_DotProgressBarDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DotProgressBarDemo.framework; path = "Pods-DotProgressBarDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1AC57628421DBADDF41EC9C806AE8DC /* Pods-DotProgressBarDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DotProgressBarDemoTests-resources.sh"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E1103230BD14E77C3D128E19A0DB961B /* Pods-DotProgressBarDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DotProgressBarDemo-umbrella.h"; sourceTree = "<group>"; };
+		E240906E3C8113EBE7D1F6F8F926C3FB /* Pods-DotProgressBarDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DotProgressBarDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		E70233FE9D41F352AF016DD46BF8C019 /* Pods-DotProgressBarDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DotProgressBarDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E906DB83462F7DA160457A0E180A1AAD /* Pods-DotProgressBarDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DotProgressBarDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E9EF1EA6FB8DADD8017FC140F15B29EB /* Pods-DotProgressBarDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DotProgressBarDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7C82C9D74966420FC2A882E0AD91A2C /* Pods-DotProgressBarDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DotProgressBarDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F8C5B2917AE211362F91AC643CB1219E /* DotProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DotProgressBar.framework; path = DotProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CD459786D93E13671364B0852D448C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E95CB549FC61FFF3174E108EA1FE260 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64395C333099CD8BD2A591706826D16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C107871CB4E6BB2AC796EC6A5657527 /* Foundation.framework in Frameworks */,
+				0101B41C125F8DEC0DE313BCD7FA02C7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E82FA555BF7A5A2D3A8214E2C84E575C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				569C7C46D75B49070C530B407C19BB87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F960FE4FF8478B249E2ED976381C961C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E4635E72872F9C7CAE7B7635C70597 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034327E14D3DF9F27B75847774913E50 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F099ABEFA1CEFAE265868BAEACFC8974 /* Pods-DotProgressBarDemo */,
+				396E9576F1142FB052E7757322C9694B /* Pods-DotProgressBarDemoTests */,
+				B35CD86C3E22E4A7B14F4C12A4C29EBA /* Pods-DotProgressBarDemoUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		396E9576F1142FB052E7757322C9694B /* Pods-DotProgressBarDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B8A3A4E44DA024F76F5D3E9ED579EC7 /* Info.plist */,
+				6B99E68BC05EF6120A69E035F912817C /* Pods-DotProgressBarDemoTests.modulemap */,
+				E906DB83462F7DA160457A0E180A1AAD /* Pods-DotProgressBarDemoTests-acknowledgements.markdown */,
+				F7C82C9D74966420FC2A882E0AD91A2C /* Pods-DotProgressBarDemoTests-acknowledgements.plist */,
+				6028A383402E8F7A43CD0B3928A57B91 /* Pods-DotProgressBarDemoTests-dummy.m */,
+				BCF93DC95B2C820D92A70D37A27A0BAA /* Pods-DotProgressBarDemoTests-frameworks.sh */,
+				D1AC57628421DBADDF41EC9C806AE8DC /* Pods-DotProgressBarDemoTests-resources.sh */,
+				7300C4CFC7F4F253E9116DB24E582C47 /* Pods-DotProgressBarDemoTests-umbrella.h */,
+				53F6B98116682C550D7B842648D13122 /* Pods-DotProgressBarDemoTests.debug.xcconfig */,
+				067AF4CC7429C786FA084FFDF74B6AA4 /* Pods-DotProgressBarDemoTests.release.xcconfig */,
+			);
+			name = "Pods-DotProgressBarDemoTests";
+			path = "Target Support Files/Pods-DotProgressBarDemoTests";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5C89D5785FE014335CF13B57810B211D /* DotProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				6D1FC27AD2EEF7D68080FE667141A266 /* Dot.swift */,
+				135FD3A3CF46FF51B1353C5FED5866F0 /* DotProgressBar.swift */,
+				633070653F3AB620FFCC788CC43CFB51 /* Line.swift */,
+				91685D7A5BD6B0F42E61877572CE2AD5 /* Support Files */,
+			);
+			name = DotProgressBar;
+			path = DotProgressBar;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				A25705379E735AF3CBBC29290A9187C6 /* Pods */,
+				A9261C22FB2071BBF4E9EDEF1574C9BA /* Products */,
+				034327E14D3DF9F27B75847774913E50 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		91685D7A5BD6B0F42E61877572CE2AD5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				018790996230151832B27C725BD2D470 /* DotProgressBar.modulemap */,
+				5DAA46B854D699025F2FA9F688A10C07 /* DotProgressBar.xcconfig */,
+				6121C82AB6A7E0B995AAA19B9F03AE07 /* DotProgressBar-dummy.m */,
+				9B89469824B783AA0ADA755D04A8BFE7 /* DotProgressBar-prefix.pch */,
+				165B916D7E237D328389307D97CD51B8 /* DotProgressBar-umbrella.h */,
+				B0F5D15535E0A8BA43825F833522D120 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DotProgressBar";
+			sourceTree = "<group>";
+		};
+		A25705379E735AF3CBBC29290A9187C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C89D5785FE014335CF13B57810B211D /* DotProgressBar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9261C22FB2071BBF4E9EDEF1574C9BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8C5B2917AE211362F91AC643CB1219E /* DotProgressBar.framework */,
+				CAB2DE9782F29AF91AC0880A5B5B4313 /* Pods_DotProgressBarDemo.framework */,
+				52D5948FF5C7A17DF466FD4BC6772045 /* Pods_DotProgressBarDemoTests.framework */,
+				C79248B3BBDE3F176945CF3E5BCCE7B9 /* Pods_DotProgressBarDemoUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B35CD86C3E22E4A7B14F4C12A4C29EBA /* Pods-DotProgressBarDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0BB0A0AA2F4F309A726CA0A6CC11C26C /* Info.plist */,
+				6007114D67EEDB14237FE6B92EA9EDEC /* Pods-DotProgressBarDemoUITests.modulemap */,
+				39D69BB79E6E92B72B4799ABB9C99FB7 /* Pods-DotProgressBarDemoUITests-acknowledgements.markdown */,
+				E70233FE9D41F352AF016DD46BF8C019 /* Pods-DotProgressBarDemoUITests-acknowledgements.plist */,
+				1C5A9FB546238B40F24453A20885989D /* Pods-DotProgressBarDemoUITests-dummy.m */,
+				2219BB616E04FC93B471AAD27EA8F46E /* Pods-DotProgressBarDemoUITests-frameworks.sh */,
+				92518D9E5DEBDF7F7571E05D1D5DDB4D /* Pods-DotProgressBarDemoUITests-resources.sh */,
+				708DBC31C4E922548694AB7D3B4819D0 /* Pods-DotProgressBarDemoUITests-umbrella.h */,
+				E9EF1EA6FB8DADD8017FC140F15B29EB /* Pods-DotProgressBarDemoUITests.debug.xcconfig */,
+				9C38E37862DAF2AF1372226DB0D846A3 /* Pods-DotProgressBarDemoUITests.release.xcconfig */,
+			);
+			name = "Pods-DotProgressBarDemoUITests";
+			path = "Target Support Files/Pods-DotProgressBarDemoUITests";
+			sourceTree = "<group>";
+		};
+		F099ABEFA1CEFAE265868BAEACFC8974 /* Pods-DotProgressBarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C3ECF3FCA000F0C51DA87BE63E01BB7C /* Info.plist */,
+				C49E0D5C8228E087D2077139F6A97C42 /* Pods-DotProgressBarDemo.modulemap */,
+				62E6EBF470459DE2DCAEB4DAD4B1BB1B /* Pods-DotProgressBarDemo-acknowledgements.markdown */,
+				E240906E3C8113EBE7D1F6F8F926C3FB /* Pods-DotProgressBarDemo-acknowledgements.plist */,
+				2E502D5524B002FFF52A5783C3AE0DD3 /* Pods-DotProgressBarDemo-dummy.m */,
+				707BB4D2A5D4E91646371E1DF0B1F3CC /* Pods-DotProgressBarDemo-frameworks.sh */,
+				9C1E25728C4FE896EEFCDC43C3977D84 /* Pods-DotProgressBarDemo-resources.sh */,
+				E1103230BD14E77C3D128E19A0DB961B /* Pods-DotProgressBarDemo-umbrella.h */,
+				83DCEFB46B7A7E133D2DD82D97662981 /* Pods-DotProgressBarDemo.debug.xcconfig */,
+				C20B0A303C140936B606428B9547AC35 /* Pods-DotProgressBarDemo.release.xcconfig */,
+			);
+			name = "Pods-DotProgressBarDemo";
+			path = "Target Support Files/Pods-DotProgressBarDemo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3028A7E729EBFCD0FB88D102336AF414 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB20BFC2B10BE9D4B4B54F8B7442A4A0 /* Pods-DotProgressBarDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73E6425977E6BD74873E84DAB3FCE53D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328AC10559D55F0DA73562FBE395E948 /* Pods-DotProgressBarDemoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DAACF69339C3723AE8D0A7896148996 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E8F22BC7E988F3A47F54C857E720635 /* DotProgressBar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38A5956C81797616A287BB57AAB5817 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F588F0B5C2B014D0A9031C4DF23BF7 /* Pods-DotProgressBarDemoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		348D86947A9AF4AB941F5543F954AE71 /* Pods-DotProgressBarDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF43506FD51F97621E204F3D2511F42 /* Build configuration list for PBXNativeTarget "Pods-DotProgressBarDemo" */;
+			buildPhases = (
+				D5062CB471773DDC6A3F7C5BB4F09A00 /* Sources */,
+				1CD459786D93E13671364B0852D448C8 /* Frameworks */,
+				3028A7E729EBFCD0FB88D102336AF414 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83593450A91917CE96443527DA685261 /* PBXTargetDependency */,
+			);
+			name = "Pods-DotProgressBarDemo";
+			productName = "Pods-DotProgressBarDemo";
+			productReference = CAB2DE9782F29AF91AC0880A5B5B4313 /* Pods_DotProgressBarDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5163FB6545B94B237640353F22037517 /* Pods-DotProgressBarDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E31A44E3EFB51CA44D28000C2FD11C2 /* Build configuration list for PBXNativeTarget "Pods-DotProgressBarDemoTests" */;
+			buildPhases = (
+				D88D57D2229810CF21510998D424B4FB /* Sources */,
+				E82FA555BF7A5A2D3A8214E2C84E575C /* Frameworks */,
+				B38A5956C81797616A287BB57AAB5817 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DotProgressBarDemoTests";
+			productName = "Pods-DotProgressBarDemoTests";
+			productReference = 52D5948FF5C7A17DF466FD4BC6772045 /* Pods_DotProgressBarDemoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A75DA3CBFA127B1E06435152A8E013E2 /* Pods-DotProgressBarDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE13BDDB5B3402193E0EB2DA093073CF /* Build configuration list for PBXNativeTarget "Pods-DotProgressBarDemoUITests" */;
+			buildPhases = (
+				EA8265B490E8FB9E9681684FAAAEA2C1 /* Sources */,
+				F960FE4FF8478B249E2ED976381C961C /* Frameworks */,
+				73E6425977E6BD74873E84DAB3FCE53D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DotProgressBarDemoUITests";
+			productName = "Pods-DotProgressBarDemoUITests";
+			productReference = C79248B3BBDE3F176945CF3E5BCCE7B9 /* Pods_DotProgressBarDemoUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4A3B534FA14AB669DB17E8F5AEEACB8 /* DotProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AC6407E60617EAB1CD32BEE401A8105 /* Build configuration list for PBXNativeTarget "DotProgressBar" */;
+			buildPhases = (
+				485DC10DD9682B3D16DC0F9CC2640005 /* Sources */,
+				B64395C333099CD8BD2A591706826D16 /* Frameworks */,
+				8DAACF69339C3723AE8D0A7896148996 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DotProgressBar;
+			productName = DotProgressBar;
+			productReference = F8C5B2917AE211362F91AC643CB1219E /* DotProgressBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A9261C22FB2071BBF4E9EDEF1574C9BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4A3B534FA14AB669DB17E8F5AEEACB8 /* DotProgressBar */,
+				348D86947A9AF4AB941F5543F954AE71 /* Pods-DotProgressBarDemo */,
+				5163FB6545B94B237640353F22037517 /* Pods-DotProgressBarDemoTests */,
+				A75DA3CBFA127B1E06435152A8E013E2 /* Pods-DotProgressBarDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		485DC10DD9682B3D16DC0F9CC2640005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C212519454D3CF06FDA1C79164DEB13 /* Dot.swift in Sources */,
+				DC17D000187C776D0ABCCAE26441A8B6 /* DotProgressBar-dummy.m in Sources */,
+				BD9B9A7BC552AA35625386C880EB947F /* DotProgressBar.swift in Sources */,
+				DA0E1E8450C61751ECB92BE2F27A6858 /* Line.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5062CB471773DDC6A3F7C5BB4F09A00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852D62B4FE4EC4122FCFC4B225F4A225 /* Pods-DotProgressBarDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D88D57D2229810CF21510998D424B4FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93A257780D99B2C356BB80F3C6DDCD8C /* Pods-DotProgressBarDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8265B490E8FB9E9681684FAAAEA2C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B50A9E5FFA62AD9AD72B89830BB668 /* Pods-DotProgressBarDemoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83593450A91917CE96443527DA685261 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DotProgressBar;
+			target = C4A3B534FA14AB669DB17E8F5AEEACB8 /* DotProgressBar */;
+			targetProxy = 35BE74C59752B353BF60A97406D5A101 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3E892AA1C9E6B0384101E985568BBBB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C20B0A303C140936B606428B9547AC35 /* Pods-DotProgressBarDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DotProgressBarDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DotProgressBarDemo/Pods-DotProgressBarDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DotProgressBarDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6BD18ED432E499744AAC4FF44F765FDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DAA46B854D699025F2FA9F688A10C07 /* DotProgressBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DotProgressBar/DotProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DotProgressBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DotProgressBar/DotProgressBar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DotProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7CE5E4BCDE487C5CCD3D53B3B7D0CDC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F6B98116682C550D7B842648D13122 /* Pods-DotProgressBarDemoTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DotProgressBarDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DotProgressBarDemoTests/Pods-DotProgressBarDemoTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DotProgressBarDemoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9FE5B0EC5EC0516759A6DDBB2928F2B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83DCEFB46B7A7E133D2DD82D97662981 /* Pods-DotProgressBarDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DotProgressBarDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DotProgressBarDemo/Pods-DotProgressBarDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DotProgressBarDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B89C47F5502884069DAC17117E0D9A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C38E37862DAF2AF1372226DB0D846A3 /* Pods-DotProgressBarDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DotProgressBarDemoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DotProgressBarDemoUITests/Pods-DotProgressBarDemoUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DotProgressBarDemoUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA6647DF997E9DD2C75EF42FC35FBC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DAA46B854D699025F2FA9F688A10C07 /* DotProgressBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DotProgressBar/DotProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DotProgressBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DotProgressBar/DotProgressBar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DotProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E96A19F4E15F6A703A583D1DD249C456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 067AF4CC7429C786FA084FFDF74B6AA4 /* Pods-DotProgressBarDemoTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DotProgressBarDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DotProgressBarDemoTests/Pods-DotProgressBarDemoTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DotProgressBarDemoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F05F6C78D343AC344DF6039BC89CCB43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9EF1EA6FB8DADD8017FC140F15B29EB /* Pods-DotProgressBarDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DotProgressBarDemoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DotProgressBarDemoUITests/Pods-DotProgressBarDemoUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DotProgressBarDemoUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E31A44E3EFB51CA44D28000C2FD11C2 /* Build configuration list for PBXNativeTarget "Pods-DotProgressBarDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CE5E4BCDE487C5CCD3D53B3B7D0CDC9 /* Debug */,
+				E96A19F4E15F6A703A583D1DD249C456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AC6407E60617EAB1CD32BEE401A8105 /* Build configuration list for PBXNativeTarget "DotProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA6647DF997E9DD2C75EF42FC35FBC14 /* Debug */,
+				6BD18ED432E499744AAC4FF44F765FDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CF43506FD51F97621E204F3D2511F42 /* Build configuration list for PBXNativeTarget "Pods-DotProgressBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FE5B0EC5EC0516759A6DDBB2928F2B9 /* Debug */,
+				3E892AA1C9E6B0384101E985568BBBB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE13BDDB5B3402193E0EB2DA093073CF /* Build configuration list for PBXNativeTarget "Pods-DotProgressBarDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F05F6C78D343AC344DF6039BC89CCB43 /* Debug */,
+				B89C47F5502884069DAC17117E0D9A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
