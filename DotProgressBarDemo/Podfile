@@ -9,7 +9,7 @@ target 'DotProgressBarDemo' do
   use_frameworks!
 
   # Pods for DotProgressBarDemo
-  pod 'DotProgressBar', '~> 0.6.0'
+  pod 'DotProgressBar', '~> 0.6.4'
 
   target 'DotProgressBarDemoTests' do
     inherit! :search_paths

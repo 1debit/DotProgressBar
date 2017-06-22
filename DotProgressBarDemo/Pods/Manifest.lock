@@ -1,12 +1,12 @@
 PODS:
-  - DotProgressBar (0.6.0)
+  - DotProgressBar (0.6.4)
 
 DEPENDENCIES:
-  - DotProgressBar (~> 0.6.0)
+  - DotProgressBar (~> 0.6.4)
 
 SPEC CHECKSUMS:
-  DotProgressBar: e4faa9c4943c64dd7502e1c95112411536d4f8d8
+  DotProgressBar: d9e43622a0bca007462c79249518ca36bb337556
 
-PODFILE CHECKSUM: 8cac13f7b5a413ffb9da23b88117a3aebb4747aa
+PODFILE CHECKSUM: 2a60f56a35e76e11f4d2ab65b857f4b8d4d17018
 
 COCOAPODS: 1.1.1
