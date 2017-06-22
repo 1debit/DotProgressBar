@@ -29,9 +29,17 @@ public class DotProgressBar: UIView {
     public private(set) var interDotDistance:CGFloat = 0
     
     //Scale of the progress line in relation to the width of the frame
-    fileprivate var dotToLineScale:CGFloat = 0.5
+    public var dotToLineScale:CGFloat = 0.7 {
+        didSet {
+            setNeedsLayout()
+        }
+    }
     ///The scale of the track dots in relation to the progress dots
-    fileprivate var trackToProgressScale:CGFloat = 0.5
+    public var trackToProgressScale:CGFloat = 0.7 {
+        didSet {
+            setNeedsLayout()
+        }
+    }
     
     ///The track view that sits behind the progress view
     fileprivate var trackView:UIView = UIView()
