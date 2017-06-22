@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name          = "DotProgressBar"
   s.summary       = "DotProgressBar is an animatable progress bar for chunks of work specified by dots."
-  s.version       = "0.6.3"
+  s.version       = "0.6.5"
   s.license       = { :type => "MIT", :file => "LICENSE" }
   s.authors       = { "Rob Norback" => "rnorback@gmail.com", "Eric Lewis" => "eric@chimebank.com" }
   s.homepage      = "https://github.com/1debit/DotProgressBar"
